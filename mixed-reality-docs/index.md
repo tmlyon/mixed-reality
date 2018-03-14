@@ -10,7 +10,27 @@ keywords:
 
 
 
-# Index
+# Mixed Reality Developer Docs
+
+This is a test to ensure that the new Markdig parser is set up correctly and support multi-column layouts.
+
+:::row:::
+    :::column:::
+        ![Some image](http://via.placeholder.com/1000x150)
+        ### Hello, title
+        This is where your content goes.
+    :::column-end:::
+    :::column:::
+        ![Some image](http://via.placeholder.com/1000x150)
+        ### Hello, title
+        This is where your content goes.
+    :::column-end:::
+    :::column:::
+        ![Some image](http://via.placeholder.com/1000x150)
+        ### Hello, title
+        This is where your content goes.
+    :::column-end:::
+:::row-end:::
 
 
 
