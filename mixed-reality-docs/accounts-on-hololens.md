@@ -14,17 +14,25 @@ keywords: HoloLens, user, account, aad, adfs, microsoft account, msa, credential
 
 During initial HoloLens setup, users are required to sign in with the account they want to use on the device. This account can be either a consumer Microsoft account or an enterprise account that has been configured in Azure Active Directory (AAD) or Active Directory Federation Services (ADFS).
 
-HoloLens is a single user device and signing into this account during setup creates a user profile on the device which the user can use to sign-in, and against which all apps will store their data. This same account also provides Single Sign On for apps such as Edge or Skype via the Windows Account Manager APIs.
+Signing into this account during setup creates a user profile on the device which the user can use to sign-in, and against which all apps will store their data. This same account also provides Single Sign On for apps such as Edge or Skype via the Windows Account Manager APIs.
 
 Additionally, when signing into an enterprise or organizational account on the device, it may also apply Mobile Device Management (MDM) policy, if configured by your IT Admin.
 
-Whenever the device restarts or resumes from standby, the credentials for this account are used to sign-in again. If the option enforcing an explicit sign-in is enabled in Settings, the user will be required to type in their credentials again. Anytime the device restarts after receiving and applying an OS update, an explicit sign-in is required.
+Whenever the device restarts or resumes from standby, the credentials for this device account are used to sign-in again. If the option enforcing an explicit sign-in is enabled in Settings, the user will be required to type in their credentials again. Anytime the device restarts after receiving and applying an OS update, an explicit sign-in is required.
 
 Note: To remove the account used in initial setup from a HoloLens you will need to reset the device from Settings or use Windows Device Recovery Tool.
 
+## Multiple Device Users
+
+Starting with the Spring Creator's Update for HoloLens, devices can support additional device-level users if you sign in to with an AAD account during inital device setup using the option "My work or school owns it." After setup, ensure that Windows Holographic for Business edition update has been applied (you can check in Settings > System > About).
+
+Any user within the same AAD tenant can then sign into the device from the lock screen or after selecting the user tile. This will sign out the prior user, and the user data and app preferences will remain separate for each user on the device. However, apps will be installed across users. If one user installs an app or removes it, that will also apply to the other device accounts. 
+
+In Settings > Accounts > Other users
+
 ## Linked Accounts
 
-Although HoloLens is a single user device, users can link additional accounts for the purpose of the easier access within apps (such as the Store) or to combine access to personal and work resources, similar to the Desktop version of Windows. Signing into an additional account does not separate the user data created on the device, such as images or downloads. Once an account has been connected to a device, apps can make use of it with your permission to reduce having to sign into each app individually.
+Within the device-level account used to sign into the device, users can also link additional accounts for the purpose of the easier access within apps (such as the Store) or to combine access to personal and work resources, similar to the Desktop version of Windows. User data, such as images or downloads, is only separated based on the account used to sign into the device. Once an account has been connected to a device, apps can make use of it with your permission to reduce having to sign into each app individually.
 
 ## Using Single Sign On within an App
 
@@ -41,7 +49,3 @@ If your app makes use of other types of authentication, such as NTLM, Basic, or 
 ## Deprecated APIs
 
 One difference for developing on HoloLens from Desktop is that [OnlineIDAuthenticator](https://msdn.microsoft.com/en-us/library/windows/apps/windows.security.authentication.onlineid.onlineidauthenticator.aspx) API is not fully supported. Although it will return a token if the primary account is in good-standing, interrupts such as those described above will not display any UI for the user, and will fail to correctly authenticate the account.
-
-## Roaming App Data
-
-While HoloLens does not currently support roaming of app data and user settings, we encourage developers to continue making use of the [roamed settings](https://msdn.microsoft.com/en-us/windows/uwp/app-settings/store-and-retrieve-app-data#Roaming_data) feature in their cross-platform apps. This will allow us to light up more functionality in your apps in the future.
