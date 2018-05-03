@@ -35,7 +35,7 @@ The Windows 10 April 2018 Update includes many improvements for using Windows Mi
 
 ## New features for HoloLens
 
-The Windows 10 April 2018 Update has not yet publicly launced on HoloLens, but you can install the [HoloLens RS4 Preview](hololens-rs4-preview) and try it early. New features are documented on the [HoloLens RS4 Preview](hololens-rs4-preview) page, and will be added to these release notes when the update is publicly availalbe for HoloLens.
+The Windows 10 April 2018 Update has not yet publicly launched on HoloLens, but you can install the [HoloLens RS4 Preview](hololens-rs4-preview) and try it early. New features are documented on the [HoloLens RS4 Preview](hololens-rs4-preview) page, and will be added to these release notes when the update is publicly availalbe for HoloLens.
 
 ## Known issues
 
