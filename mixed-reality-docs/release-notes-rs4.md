@@ -28,7 +28,7 @@ The Windows 10 April 2018 Update includes many improvements for using Windows Mi
 
 * **New environment for the Windows Mixed Reality home** - You can now choose between the Cliff House and the new Skyloft environment by selecting **Places** on the Start menu. We've also added an experimental feature that will let you use original environments you've created (more info coming soon).
 * **Quick access to mixed reality capture** - You can now take mixed reality photos using a motion controller. Hold the Windows button and then tap the trigger. This works across environments and apps, but will not capture content protected with DRM.
-* **New options for resizing content** - FILL IN
+* **New options for resizing content** - You can now resize 2D apps by dragging the edges and corners of the window.
 * **Animated 3D app launchers and decorative 3D objects for your home** - You can now add animation to 3D app launchers, and allow users to place decorative 3D models from a web page into the Windows Mixed Reality home.
 * **Improvements to Windows Mixed Reality for SteamVR** - [Windows Mixed Reality for SteamVR](updating-your-steamvr-application-for-windows-mixed-reality.md) is out of "early access" with new upgrades, including: haptic feedback when using motion controllers, improved performance and reliability, and improvements to the appearance of motion controllers in SteamVR.
 * **Other improvements** - Automatic performance settings have been updated to provide a more optimized experience (you can [manually override](#visual-quality) this setting). Setup now provides more detailed information about common compatibility issues with USB 3.0 controllers and graphics cards.
@@ -49,32 +49,32 @@ We've worked hard to deliver a great Windows Mixed Reality experience, but we're
 
 * When setting up Windows with a headset connected, your PC monitor may go blank. Unplug your headset to enable output to your PC monitor to complete Windows setup.
 * If you do not have headphones connected, you may miss additional tips when you first visit the Windows Mixed Reality home.
-* Other Bluetooth devices can cause interference with motion controllers. If the motion controllers have connection/pairing/tracking issues, make sure the Bluetooth radio (if an external dongle) is plugged in to an unobstructed location and not immediately next to another Bluetooth dongle.  Also try powering down other Bluetooth peripherals during the Windows Mixed Reality sessions to see if it helps.
+* Other Bluetooth devices can cause interference with motion controllers. If the motion controllers have connection/pairing/tracking issues, make sure the Bluetooth radio (if an external dongle) is plugged in to an unobstructed location and not immediately next to another Bluetooth dongle. Also try powering down other Bluetooth peripherals during Windows Mixed Reality sessions to see if it helps.
 
 ### Games and apps from the Microsoft Store
 
-* Some graphically intensive games, like Forza Motorsports 6, may cause performance issues on less capable PCs when played inside Windows Mixed Reality.
+Some graphically intensive games, like Forza Motorsport 7, may cause performance issues on less capable PCs when played inside Windows Mixed Reality.
 
 ### Audio
 
-* If you have Cortana enabled on your host PC prior to using your Windows Mixed Reality headset, you may lose the spatial sound simulation applied to the apps you place around the Windows Mixed Reality home. The work around is to enable "Windows Sonic for Headphones" on all the audio devices attached to your PC, even your headset-connected audio device:
+* If you have Cortana enabled on your host PC prior to using your Windows Mixed Reality headset, you may lose spatial sound simulation applied to the apps you place around the Windows Mixed Reality home. The work around is to enable "Windows Sonic for Headphones" on all the audio devices attached to your PC, even your headset-connected audio device:
    1. Left-click the speaker icon on the desktop taskbar and select from list of audio devices.
    2. Right-click the speaker icon on the desktop taskbar and select "Windows Sonic for Headphones" in the "Speaker setup" menu.
    3. Repeat these steps for all of your audio devices (endpoints).
 
 >[!NOTE]
-> - Another option is to turn off "Let Cortana respond to Hey Cortana" in **Settings** > **Cortana** on your desktop prior to launching Windows Mixed Reality.
+>Another option is turning off "Let Cortana respond to Hey Cortana" in **Settings** > **Cortana** on your desktop prior to launching Windows Mixed Reality.
 
 * When another multimedia USB device (such as a web cam) shares the same USB hub (either external or inside your PC) with the Windows Mixed Reality headset, in rare cases the headset's audio jack/headphones may either have a buzzing sound or no audio at all. You can fix this by your headset into a USB port that does not share the same hub as the other device, or disconnect/disable your other USB multimedia device.
 * In very rare cases, the host PC's USB hub cannot provide enough power to the Windows Mixed Reality headset and you may notice a burst of noise from the headphones connected to the headset.
 
 ### Holograms
 
-* If you've placed a large number of holograms in your Windows Mixed Reality home, some may disappear and reappear as you look around. To avoid this, remove some of the holograms in that area of the Windows Mixed Reality home.
+If you've placed a large number of holograms in your Windows Mixed Reality home, some may disappear and reappear as you look around. To avoid this, remove some of the holograms in that area of the Windows Mixed Reality home.
 
 ### Motion controllers
 
-* Occasionally, if you click on a webpage in Microsoft Edge, the content will zoom instead of click.
+Occasionally, when you click on a web page in Microsoft Edge, the content will zoom instead of click.
 
 ### Desktop app in the Windows Mixed Reality home
 
@@ -87,13 +87,15 @@ We've worked hard to deliver a great Windows Mixed Reality experience, but we're
 
 ### Windows Mixed Reality for SteamVR
 
-* You may need to launch Mixed Reality Portal after updating to ensure the necessary software updates for 1803 have completed before launching SteamVR. 
-* You must be on a recent version of Windows Mixed Reality for SteamVR to remain compatible with the 1803 update. Make sure automatic updates are turned on for Windows Mixed Reality for SteamVR which is located under the software section of your library in Steam.  
+* You may need to launch Mixed Reality Portal after updating to ensure the necessary software updates for the Windows 10 April 2018 Update have completed before launching SteamVR. 
+* You must be on a recent version of Windows Mixed Reality for SteamVR to remain compatible with the Windows 10 April 2018 Update. Make sure automatic updates are turned on for Windows Mixed Reality for SteamVR, which is located in the "Software" section of your library in Steam.  
 
 ### Other issues
 
-* An early version of the 1803 update pushed to Insiders (version 17134.5) was missing a piece of software necessary to run Windows Mixed Reality. We recommend avoiding this version if using Windows Mixed Reality. 
-* We've identified a performance regression when using Surface Book 2 on the initial release of this update (10.0.17134.1) that we are working to fix in an upcoming update patch. We suggest waiting until this has been fixed before updating manually or waiting for the update to roll out normally.  
+>[!IMPORTANT]
+>An early version of the Windows 10 April 2018 Update pushed to Insiders (version 17134.5) was missing a piece of software necessary to run Windows Mixed Reality. We recommend avoiding this version if using Windows Mixed Reality. 
+
+We've identified a performance regression when using Surface Book 2 on the initial release of this update (10.0.17134.1) that we are working to fix in an upcoming update patch. We suggest waiting until this has been fixed before updating manually or waiting for the update to roll out normally.  
 
 ## Prior release notes
 
