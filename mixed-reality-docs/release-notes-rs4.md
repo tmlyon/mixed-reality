@@ -20,7 +20,7 @@ To update to the latest release for each device, open the **Settings** app, go t
 >The Windows 10 RS4 Update for HoloLens has not yet been publicly released. However, you can install the [HoloLens RS4 Preview](hololens-rs4-preview) and try it early.
 
 **Latest release for Desktop:** Windows 10 Desktop April 2018 Update (**10.0.17134.1**)<br>
-**Latest release for HoloLens:** [Windows 10 Holographic April 2018 Update](release-notes-august-2016.md) (**10.0.14393.0**, Windows 10 Anniversary Update)
+**Latest release for HoloLens:** [Windows 10 Holographic August 2016](release-notes-august-2016.md) (**10.0.14393.0**, Windows 10 Anniversary Update)
 
 ## New features for Windows Mixed Reality immersive headsets
 
