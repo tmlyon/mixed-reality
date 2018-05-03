@@ -30,7 +30,7 @@ The Windows 10 April 2018 Update includes many improvements for using Windows Mi
 * **Quick access to mixed reality capture** - You can now take mixed reality photos using a motion controller. Hold the Windows button and then tap the trigger. This works across environments and apps, but will not capture content protected with DRM.
 * **New options for resizing content** - FILL IN
 * **Animated 3D app launchers and decorative 3D objects for your home** - You can now add animation to 3D app launchers, and allow users to place decorative 3D models from a web page into the Windows Mixed Reality home.
-* **Improvements to Windows Mixed Reality for SteamVR** - [Windows Mixed Reality for SteamVR](updating-your-steamvr-application-for-windows-mixed-reality.md) is out of Early Access with new upgrades, including: haptic feedback when using motion controllers, improved performance and reliability, and improvements to the appearance of motion controllers in SteamVR.
+* **Improvements to Windows Mixed Reality for SteamVR** - [Windows Mixed Reality for SteamVR](updating-your-steamvr-application-for-windows-mixed-reality.md) is out of "early access" with new upgrades, including: haptic feedback when using motion controllers, improved performance and reliability, and improvements to the appearance of motion controllers in SteamVR.
 * **Other improvements** - Automatic performance settings have been updated to provide a more optimized experience (you can [manually override](#visual-quality) this setting). Setup now provides more detailed information about common compatibility issues with USB 3.0 controllers and graphics cards.
 
 ## New features for HoloLens
