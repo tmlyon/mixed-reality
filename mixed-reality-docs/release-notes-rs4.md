@@ -43,7 +43,7 @@ We've worked hard to deliver a great Windows Mixed Reality experience, but we're
 
 ### Visual quality
 
-* If you notice after the April 2018 Update that graphics are more blurry, or the field of view looks smaller on your headset, the automatic performance setting may have been changed in order to maintain a sufficient framerate on a less powerful graphics card (such as Nvidia 1050). You can manually override this (if you choose) by navigating to **Settings > Mixed reality > Headset display > Experience options > Change** and changing "Automatic" to "90 Hz." You can also try changing **Visual quality** (on the same Settings page) to "High."
+If you notice after the Windows 10 April 2018 Update that graphics are more blurry than before, or that the field of view looks smaller on your headset, the automatic performance setting may have been changed in order to maintain a sufficient framerate on a less powerful graphics card (such as Nvidia 1050). You can manually override this (if you choose) by navigating to **Settings > Mixed reality > Headset display > Experience options > Change** and changing "Automatic" to "90 Hz." You can also try changing **Visual quality** (on the same Settings page) to "High."
 
 ### Windows Mixed Reality setup
 
