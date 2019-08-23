@@ -10,24 +10,43 @@ keywords: HoloLens (1st gen), HoloLens 2, Mixed Reality, cursors, targeting, gaz
 
 # Cursors
 
-> [!NOTE]
-> More guidance specific to HoloLens 2 [coming soon](index.md#news-and-notes).
-
-
 A cursor, or indicator of your current targeting vector, provides continuous feedback for the user to understand where HoloLens believes their current focus is at that time. The cursor allows the user to understand their current targeting point and acts as feedback to indicate what area, hologram, or point will respond to input. It is the digital representation of where the device understands the user's attention to be (though that may not be the same as determining anything about their intentions).
 
-The feedback provided by the cursor offers users the ability to anticipate how the system will respond, use that signal as feedback to better communicate their intention to the device, and ultimately be more confident about their interactions.
+The feedback provided by the cursor offers users the ability to anticipate how the system will respond, use that signal as feedback to better communicate their intention to the device, and ultimately be more confident about their interactions. HoloLens 2 supports a wide variety of different input modes, and the cursor should respond appropriately to the user's method of interaction, including: 
+1. Gaze targeting for voice and airtap on HoloLens (1st gen)
+2. Hand interactions near and far (HoloLens 2)
+3. Bluetooth mouse
 
-## HoloLens (1st gen)
+We suggest transitioning between the cursors for different modes when the user makes an intent to use that input mode. With mouse this occurs by the user moving the mouse, with gaze by saying "select," and with hands by tapping on a hologram or airtapping. 
+
+## Gaze targeting for voice and airtap on HoloLens (1st gen)
 
 Targeting of content on HoloLens (1st gen) is done primarily with the [gaze](gaze.md) vector (a ray controlled by the position and rotation of the head). This provides a form of direct input for the user that needs little teaching. However, users have difficulty using an unmarked center of gaze for precise targeting so a cursor ensures users know the point they are currently targeting. 
 
 
-## Positioning
+### Positioning
 
 In general, the indicator should move in approximately a 1:1 ratio with head movement. There are some cases where gain (augmenting or diminishing movement noticeably) might be used as an intentional mechanic, but it will cause trouble for users if used unexpectedly (note that there is a tiny bit of 'lag' recommended for the cursor to avoid issues with fully display-locked content). Most importantly though, experiences should be "honest" in the representation of cursor position - if smoothing, magnetism, gain, or other effects are included, the system should still show the cursor wherever the system's understanding of position is, with those effects included. The cursor is the system's way of telling the user what they can or can't interact with, not the user's way of telling the system.
 
 The indicator should ideally lock in depth to whatever elements the user can plausibly target. This may mean surface-locking if there is some [Spatial Mapping](spatial-mapping.md) mesh or locking to the depth of any "floating" UI elements, to help the user understand what they can interact with in real-time.
+
+## Hand interactions near and far (HoloLens 2)
+
+### Transitioning between near and far
+
+When there are holograms within the user's reach and near to the user's hands, it's recommended to switch automatically from far cursors to direct manipulation and show the near cursor on the user's fingertip. 
+
+### Near interaction visuals
+
+Rendering a cursor at the tip of the user's finger reinforces to the user when they have come into contact with the surface of a hologram and having the visual react to a press event reinforces the feedback. 
+
+### Far interactions visuals
+
+Far interaction cursors behave similar to motion controllers in a VR headset and show a ray from the user's hands to show what holograms or controls they are targeting. 
+
+## Bluetooth mouse
+
+The positioning and visuals of the mouse cursor behave differently in the mixed reality home from other input types. The position of the cursor is initially based off of the user's gaze vector but then can be moved independently. If the user's gaze moves significantly from the initial view, the cursor position will snap back to the new gaze vector when it is moved again. In the home, the cursor visual also uses a desktop mouse pointer to allow for more precision targeting and indicate the type of input being used. 
 
 ## Cursor design principles
 
